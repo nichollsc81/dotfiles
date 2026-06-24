@@ -38,8 +38,10 @@ sudo apt install -y build-essential procps curl file git zsh gh
 
 ```bash
 gh auth login            # choose GitHub.com -> HTTPS -> login via browser
-gh repo clone nicholls-c/dotfiles ~/dotfiles
+gh repo clone nichollsc81/dotfiles ~/dotfiles
 ```
+
+Or copy over ssh keys etc.
 
 ## 4. run the bootstrap
 
