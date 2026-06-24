@@ -23,7 +23,9 @@ fi
 
 # 4. symlink dotfiles into $HOME via stow
 echo "==> stowing dotfiles"
-[ -f ~/.zshrc ] && rm ~/.zshrc
+for f in ~/.zshrc ~/.gitconfig; do
+    [ -f "$f" ] && rm "$f"
+done
 cd "$REPO_DIR"
 stow --restow --target="$HOME" zsh git starship
 
