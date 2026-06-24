@@ -112,6 +112,8 @@ brew "kustomize"
 brew "kyverno"
 # Simple terminal UI for git commands
 brew "lazygit"
+# And for docker
+brew "lazydocker"
 # Modern and intuitive terminal-based text editor
 brew "micro"
 # Run a Kubernetes cluster locally
