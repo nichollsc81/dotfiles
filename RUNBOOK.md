@@ -31,7 +31,7 @@ private repo.
 
 ```bash
 sudo apt update
-sudo apt install -y build-essential procps curl file git gh stow
+sudo apt install -y build-essential procps curl file git gh stow zsh
 ```
 
 ## 3. authenticate to github and clone
