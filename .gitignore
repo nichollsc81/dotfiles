@@ -1,0 +1,16 @@
+# never commit secrets or per-machine identity
+.gitconfig.local
+.zshrc.local
+*.local
+
+# ssh / signing material (should never live in a dotfiles repo)
+**/.ssh/
+*.pem
+*.key
+id_*
+
+# auth / token state from tools under ~/.config
+**/sops/
+**/gh/hosts.yml
+**/ngrok/
+.cargo/credentials*

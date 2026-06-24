@@ -1,0 +1,50 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+[kubernetes]
+disabled = false
+format = '$symbol \[[$context (\($namespace\))]($style)\] '
+symbol = '☸ '
+
+# default style for unmatched clusters
+style = "bold #FFC0CB"
+
+# highlight production clusters in red
+[[kubernetes.contexts]]
+context_pattern = ".*prd.*"
+style = "bold #FF033E"
+
+# highlight test clusters in orange
+[[kubernetes.contexts]]
+context_pattern = ".*tst.*"
+style = "bold #FFA500"
+
+# highlight dev clusters in green
+[[kubernetes.contexts]]
+context_pattern = ".*dev.*"
+style = "bold #89F336"
+
+# replace the "❯"
+[character]
+success_symbol = "[λ](green)"
+error_symbol = "[λ](red)"
+
+[git_branch]
+truncation_length = 25
+truncation_symbol = ''
+
+[git_status]
+ahead = '⇡${count}'
+diverged = '⇕⇡${ahead_count}⇣${behind_count}'
+behind = '⇣${count}'
+staged = '[++\($count\)](green)'
+
+[git_commit]
+commit_hash_length = 7
+only_detached = false
+
+[helm]
+
+[python]
+format = '\[[$symbol($version) ($virtualenv)]($style)\]'
+symbol = '🐍 '
+pyenv_version_name = false
