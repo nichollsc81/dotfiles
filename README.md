@@ -28,6 +28,9 @@ then, per-machine (these are gitignored, never committed):
 - `~/.gitconfig.local` — your git identity (email, name, signingkey)
 - `~/.zshrc.local` — optional machine-local shell overrides
 
+to dry-run the whole setup on a disposable distro first, see
+[`RUNBOOK.md`](RUNBOOK.md).
+
 ## adding a dotfile later
 
 drop it into the matching package mirroring its `$HOME` path, then re-stow:
