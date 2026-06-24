@@ -4,6 +4,9 @@ set -eu
 
 REPO_DIR="$(cd "$(dirname "$0")" && pwd)"
 
+sudo apt update && \
+sudo apt install -y build-essential procps curl file git gh stow zsh
+
 # 1. homebrew (linux) — install if missing
 if ! command -v brew >/dev/null 2>&1; then
     echo "==> installing homebrew"
