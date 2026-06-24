@@ -15,10 +15,10 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 echo "==> brew bundle"
 brew bundle --file="$REPO_DIR/Brewfile"
 
-# 3. oh-my-zsh (unattended — don't switch shell or start zsh here)
+# 3. oh-my-zsh (unattended — keep our stowed .zshrc, don't switch shell or start zsh)
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
     echo "==> installing oh-my-zsh"
-    RUNZSH=no CHSH=no sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    RUNZSH=no CHSH=no KEEP_ZSHRC=yes sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 fi
 
 # 4. symlink dotfiles into $HOME via stow
