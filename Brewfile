@@ -12,6 +12,8 @@ tap "little-angry-clouds/my-brews", trusted: true
 tap "norwoodj/tap"
 tap "robscott/tap"
 tap "sayyoungman/tap", "https://github.com/SayYoungMan/homebrew-tap"
+# vscode
+cask "visual-studio-code"
 # Run your GitHub Actions locally
 brew "act"
 # Automate deployment, configuration, and upgrading
