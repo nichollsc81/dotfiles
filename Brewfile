@@ -1,37 +1,32 @@
 #tap "argoproj/tap"
-#tap "atlassian/acli", "https://github.com/atlassian/homebrew-acli.git"
-#tap "azure/bicep"
-#tap "azure/functions"
 #tap "derailed/popeye"
 #tap "driftive/tap"
 #tap "fairwindsops/tap", "https://github.com/FairwindsOps/homebrew-tap"
 #tap "hashicorp/tap"
-#tap "knative-extensions/kn-plugins"
-#tap "knative/client"
 #tap "little-angry-clouds/my-brews", trusted: true
-#tap "norwoodj/tap"
-#tap "robscott/tap"
+#tap "norwoodj/tap", trusted: true
+#tap "robscott/tap", trusted: true
 #tap "sayyoungman/tap", "https://github.com/SayYoungMan/homebrew-tap"
-## vscode
-#cask "visual-studio-code"
-## Run your GitHub Actions locally
-#brew "act"
-## Automate deployment, configuration, and upgrading
-#brew "ansible"
-## Checks ansible playbooks for practices and behaviour
-#brew "ansible-lint"
-## GitOps Continuous Delivery for Kubernetes
-#brew "argocd"
+# vscode
+cask "visual-studio-code"
+# Run your GitHub Actions locally
+brew "act"
+# Automate deployment, configuration, and upgrading
+brew "ansible"
+# Checks ansible playbooks for practices and behaviour
+brew "ansible-lint"
+# GitOps Continuous Delivery for Kubernetes
+brew "argocd"
 ## Azure Storage data transfer utility
 #brew "azcopy"
 ## Interpreted, interactive, object-oriented programming language
 #brew "python@3.13"
-## Microsoft Azure CLI 2.0
-#brew "azure-cli"
+# Microsoft Azure CLI 2.0
+brew "azure-cli"
 ## CLI to facilitate terraforming your existing Cloudflare resources
 #brew "cf-terraforming"
-## Prevent cloud misconfigurations during build-time for IaC tools
-#brew "checkov"
+# Prevent cloud misconfigurations during build-time for IaC tools
+brew "checkov"
 ## CLI to install, manage & troubleshoot Kubernetes clusters running Cilium
 #brew "cilium-cli"
 ## Cloud provider for KIND clusters
